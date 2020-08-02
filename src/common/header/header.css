@@ -1,5 +1,6 @@
 .header-content {
     background-color: #f1f2fa;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.15);
 }
 
 .sky-play {

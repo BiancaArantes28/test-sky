@@ -1,0 +1,33 @@
+.tabes {
+    width: 100%;
+    
+}
+
+.tabes-header ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.25);
+}
+
+.tabes-header ul li {
+    display: inline-block;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+    min-width: calc(100%/3);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.tabes-header ul li.active {
+    border-bottom: 4px solid #DB524F;
+    color: #DB524F;
+}
+
+.tabes-body {
+    margin-top: 30px;
+}

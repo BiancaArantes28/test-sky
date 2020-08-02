@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import TabComponent from '../../components/tab/TabComponent';
 
 class HomeContainer extends Component {
 
     render() {
         return(
-            <h1>Home</h1>
+            <div>
+                <TabComponent />
+            </div>
+            
         );
     }
 }
