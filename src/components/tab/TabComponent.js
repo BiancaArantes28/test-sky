@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import './tab.css';
+import Banner from '../../pages/home/Banner';
 
 class TabComponent extends Component {
 
@@ -28,9 +29,8 @@ class TabComponent extends Component {
                         <li className={activeIndex === 2 ? "active" : ''} onClick={() => this.handleTab(2)}>Canais</li>
                     </ul>
                 </div>
-                <Container>
                     <div className={activeIndex === 0 ? "tabes-body" : "hide"}>
-                        <h1>Filmes</h1>
+                        <Banner />
                     </div>
                     <div className={activeIndex === 1 ? "tabes-body" : "hide"}>
                         <h1>Séries</h1>
@@ -38,7 +38,6 @@ class TabComponent extends Component {
                     <div className={activeIndex === 2 ? "tabes-body" : "hide"}>
                         <h1>Canais</h1>
                     </div>
-                </Container>
 
             </div>
         );
