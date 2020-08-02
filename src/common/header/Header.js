@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUniversalAccess, faAdjust, faPlay, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import './header.css';
 
@@ -12,21 +14,15 @@ class Header extends Component {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link><FontAwesomeIcon icon={faUniversalAccess} /></Nav.Link>
+                        <Nav.Link><FontAwesomeIcon icon={faAdjust} /></Nav.Link>
+                        <Nav.Link>A-</Nav.Link>
+                        <Nav.Link>A+</Nav.Link>
+                        <Nav.Link className="sky-play"><FontAwesomeIcon icon={faPlay} /> Play</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
+                        <Nav.Link><FontAwesomeIcon icon={faUser} /> Entrar</Nav.Link>
+                        <Nav.Link><FontAwesomeIcon icon={faSearch} /></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
