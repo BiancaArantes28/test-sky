@@ -20,6 +20,24 @@ footer {
     text-indent: -5000em;
 }
 
+.socialNetworkds {
+    text-align: right;
+}
+
+.socialNetworkds a {
+    padding: 5px;
+    margin: 0 3px;
+    display: inline-block;
+    border-radius: 7px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.socialNetworkds a:hover {
+    color: #DB524F;
+    text-decoration: none;
+}
+
 .moreAboutSky {
     padding-top: 30px;
     display: table;

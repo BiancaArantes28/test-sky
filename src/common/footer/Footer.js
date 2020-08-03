@@ -18,7 +18,18 @@ class Footer extends Component {
                             </Col>
                             <Col xs={8}>
                                 <div className="socialNetworkds">
-
+                                    <a href="http://www.facebook.com/pages/SKY-Brasil/85873897214?ref=ts" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="http://twitter.com/skybrasil" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="http://www.youtube.com/user/skyhdtv" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="http://instagram.com/skybrasil" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
                                 </div>
                             </Col>
                         </Row>
