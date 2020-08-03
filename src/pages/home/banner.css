@@ -1,5 +1,5 @@
 .banner {
-    margin-bottom: 1000px;
+    margin-bottom: 50px;
     margin-top: 50px;
 }
 
@@ -39,7 +39,7 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     width: 15%;
     color: #fff;
     text-align: center;
@@ -69,13 +69,12 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     width: 15%;
     color: #fff;
     text-align: center;
     opacity: .5;
     transition: opacity .15s ease;
-    margin-right: -134px;
 }
 
 .iconRight {
@@ -92,7 +91,7 @@
     padding-top: 10px;
 }
 
-.carousel-indicators {
+.banner-sky-carousel-indicators {
     position: relative;
     right: 0;
     bottom: 0;
@@ -107,7 +106,7 @@
     list-style: none;
 }
 
-.carousel-indicators li {
+.banner-sky-carousel-indicators li {
     box-sizing: content-box;
     flex: 0 1 auto;
     width: 30px;
@@ -124,7 +123,52 @@
     transition: opacity .6s ease;
 }
 
-.carousel-indicators li.active {
+.banner-sky-carousel-indicators li.active {
     opacity: 1;
-    background-color: red;
+    background-color: #DB524F;
+}
+
+.banner-mobile {
+    display: none !important;
+}
+
+.imgsBannerMobile {
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-indicators li{
+    background-color: black;
+}
+
+.carousel-indicators li.active {
+    background-color: #DB524F;
+}
+
+@media only screen and (min-width: 1340px) and (max-width: 1400px) {
+    .bannerImags .active {
+        width: 720px;
+    }
+}
+
+@media only screen and (min-width: 1221px) and (max-width: 1340px) {
+    .bannerImags .active {
+        width: 680px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1221px) {
+    .bannerImags .active {
+        width: 660px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+    .banner-mobile {
+        display: block !important;
+    }
+
+    .banner {
+        display: none;
+    }
 }

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import './tab.css';
-import Banner from '../../pages/home/Banner';
+import BannerContainer from '../../pages/home/BannerContainer';
+import ListComponent from '../list/ListComponent';
+import MoviesContainer from '../../pages/home/MoviesContainer';
 
 class TabComponent extends Component {
 
@@ -30,7 +32,8 @@ class TabComponent extends Component {
                     </ul>
                 </div>
                     <div className={activeIndex === 0 ? "tabes-body" : "hide"}>
-                        <Banner />
+                        <BannerContainer />
+                        <MoviesContainer />
                     </div>
                     <div className={activeIndex === 1 ? "tabes-body" : "hide"}>
                         <h1>Séries</h1>
