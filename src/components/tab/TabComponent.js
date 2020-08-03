@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Container } from 'react-bootstrap';
 import './tab.css';
 import BannerContainer from '../../pages/home/BannerContainer';
-import ListComponent from '../list/ListComponent';
 import MoviesContainer from '../../pages/home/MoviesContainer';
 
 class TabComponent extends Component {

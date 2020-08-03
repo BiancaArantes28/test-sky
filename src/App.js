@@ -5,6 +5,7 @@ import './App.css';
 import Header from './common/header/Header';
 import HomeContainer from './pages/home/HomeContainer';
 import store from './store';
+import Footer from './common/footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" component={HomeContainer} />
           <Redirect to="/" />
         </Switch>
+        <Footer />
       </Router>
     </Provider>
 

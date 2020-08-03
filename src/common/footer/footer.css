@@ -1,0 +1,56 @@
+footer {
+    background-color: #f1f2fa;
+    width: 100%;
+    border-top: 1px solid rgba(80, 80, 80, 0.15);
+    display: table;
+}
+
+.menuFooter {
+    padding: 0 5.275%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.15);
+}
+
+.logoSkyFooter {
+    background-repeat: no-repeat;
+    background: url("https://skyplay.sky.com.br/o/sky-play-theme/images/sky-light-default.svg");
+    background-position: center center;
+    width: 84px;
+    height: 32px;
+    text-indent: -5000em;
+}
+
+.moreAboutSky {
+    padding: 0 5.275%;
+    padding-top: 30px;
+}
+
+.imgSky {
+    width: 48px;
+    float: left;
+    margin-right: 20px;
+}
+
+.downloadAppMinhaSky {
+    float: left;
+    width: 70%;
+    margin-top: 4px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.logo-store {
+    margin-left: 50px;
+    display: block;
+}
+
+.logo_apple_store {
+    background-image: url("https://skyplay.sky.com.br/o/sky-play-theme/images/button-apple-store-light-default.svg");
+    background-repeat: no-repeat;
+    background-size: 160px 54px;
+    width: 160px;
+    height: 54px;
+    text-indent: -1000em;
+    display: inline-block;
+}
