@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './list.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowLeft, faLock, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 class ListComponent extends Component {
 
@@ -19,11 +19,6 @@ class ListComponent extends Component {
     changePage(activeIndex) {
 
         if (activeIndex > 0) {
-            /* let newElements = elements.slice(8, elements.length - 1);
-            console.log("aqui if")
-            newElements.forEach((element) => {
-                element.classList.add("hideWrapper");
-            }); */
             let wrapperVisible = document.querySelectorAll('.wrapperVisible');
             wrapperVisible.forEach((element) => {
                 element.classList.add("wraperHide");
@@ -79,6 +74,9 @@ class ListComponent extends Component {
                             return (
                                 <div className={`wrapperOne ${count <= 8 ? "wrapperVisible" : "wraperHide"}`} style={{ width: 'calc(100%/8)', marginRight: '8px' }}>
                                     <img className="listImgs" src={this.getImage(i)} />
+                                    <span>
+                                        <FontAwesomeIcon icon={imgs.isBlocked ? faLock : faShoppingCart} />
+                                    </span>
                                 </div>
                             );
                             
